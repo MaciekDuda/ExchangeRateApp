@@ -1,9 +1,9 @@
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exchange Rate App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exchange Rate App</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"
@@ -14,10 +14,43 @@
 			src="https://kit.fontawesome.com/71e602d8c4.js"
 			crossorigin="anonymous"
 		></script>
-</head>
-<body>
-    
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Exchange Rate App</h1>
+			<p>Check current rate of the most popular currencies 📈</p>
 
-    <script src="/js/main.js"></script>
-</body>
+			<div class="app-body">
+				<div class="section-left">
+					<input type="number" class="amount-one" value="1" />
+					<select id="currency-one">
+						<option value="PLN" selected>PLN</option>
+						<option value="EUR">EUR</option>
+						<option value="USD">USD</option>
+						<option value="CHF">CHF</option>
+						<option value="GBP">GBP</option>
+					</select>
+				</div>
+				<button class="swap">
+					<i class="fa-solid fa-rotate"></i>
+				</button>
+				<div class="section-left">
+					<input type="number" class="amount-two" disabled />
+					<select id="currency-two">
+						<option value="PLN">PLN</option>
+						<option value="EUR" selected>EUR</option>
+						<option value="USD">USD</option>
+						<option value="CHF">CHF</option>
+						<option value="GBP">GBP</option>
+					</select>
+				</div>
+
+				<div>
+					<p class="rate-info"></p>
+				</div>
+			</div>
+		</div>
+
+		<script src="/js/main.js"></script>
+	</body>
 </html>

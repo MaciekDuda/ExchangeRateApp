@@ -5,10 +5,92 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100vh;
-	font-family: 'Monserrat', sans-serif;
-	background-color: #29303B;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #29303b;
+}
+
+.wrapper {
+	background: linear-gradient(#626262, #393939);
+	// background-color: #414141;
+	padding: 50px;
+	width: 800px;
+	text-align: center;
+	color: #fff;
+	border: 1px solid #393939;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #393939;
+
+	h1 {
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-size: 24px;
+		margin-bottom: 20px;
+		font-weight: 200;
+	}
+
+	.app-body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.section-left,
+		.section-right {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		input {
+			margin-bottom: 10px;
+			font-size: 60px;
+			width: 100%;
+		}
+
+		select {
+			padding: 10px 20px;
+			font-size: 36px;
+			cursor: pointer;
+		}
+
+		input,
+		select {
+			text-align: center;
+			background: none;
+			border: none;
+			color: #fff;
+		}
+		input:focus,
+		select:focus {
+			outline: none;
+			color: rgb(67, 171, 255);
+		}
+
+		option {
+			color: #393939;
+		}
+
+		.swap {
+			align-self: flex-end;
+			padding: 5px 50px;
+			margin: 5px;
+			background-image: linear-gradient(45deg, #dfefde, #35a800);
+			border-radius: 25px;
+			font-size: 30px;
+			border: none;
+			color: #fff;
+			cursor: pointer;
+
+			&:focus {
+				outline: none;
+                background-image: linear-gradient(45deg, #0d28c2,#dfefde);
+			}
+		}
+	}
 }
