@@ -63,7 +63,7 @@ body {
 .wrapper .app-body input:focus,
 .wrapper .app-body select:focus {
   outline: none;
-  color: rgb(67, 171, 255);
+  color: #35a800;
 }
 .wrapper .app-body option {
   color: #393939;
@@ -81,5 +81,9 @@ body {
 }
 .wrapper .app-body .swap:focus {
   outline: none;
-  background-image: linear-gradient(45deg, #0d28c2, #dfefde);
+  background-image: linear-gradient(45deg, #dfefde, #095f06);
+}
+.wrapper .rate-info {
+  margin-top: 30px;
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
